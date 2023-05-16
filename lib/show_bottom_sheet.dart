@@ -28,18 +28,31 @@ class _ShowModolBottomsettPageState extends State<ShowModolBottomsettPage> {
                 ),
                 builder: (BuildContext context) {
                   return SizedBox(
+                    height: 200,
                     width: double.infinity,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         const Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text(
-                            "Ilovadan chiqasizmi?",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20,
-                            ),
+                          child: Column(
+                            children: [
+                              Text(
+                                "Ilovadan chiqasizmi?",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
+                              ),
+                              Text(
+                                "Ilovadan butunlay chiqib ketish yoki qolish uchun bosing.",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ],
                           ),
                         ),
                         Row(
