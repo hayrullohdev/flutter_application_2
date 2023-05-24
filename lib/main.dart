@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutter_application_2/show_bottom_sheet.dart';
+import 'package:flutter_application_2/media_query.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,10 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Tasbeh',
       theme: ThemeData(
-        useMaterial3: true,
+        // useMaterial3: true,
         primarySwatch: Colors.blue,
       ),
-      home: const ShowModolBottomsettPage(),
+      home: const Media_queryPage(),
       debugShowCheckedModeBanner: false,
     );
   }
