@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/if_else.dart';
+// ignore: unused_import
 import 'package:flutter_application_2/media_query.dart';
 
 void main() {
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
         // useMaterial3: true,
         primarySwatch: Colors.blue,
       ),
-      home: const Media_queryPage(),
+      home: const If_ElsePage(),
       debugShowCheckedModeBanner: false,
     );
   }

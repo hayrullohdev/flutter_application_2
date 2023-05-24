@@ -12,7 +12,8 @@ class _Media_queryPageState extends State<Media_queryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text(MediaQuery.of(context).size.width.toString()),
+        child: Text(
+            "${MediaQuery.of(context).size.width.toString()} x ${MediaQuery.of(context).size.height.toString()}"),
       ),
     );
   }
