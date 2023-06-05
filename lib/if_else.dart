@@ -8,23 +8,28 @@ class If_ElsePage extends StatefulWidget {
 }
 
 class _If_ElsePageState extends State<If_ElsePage> {
-  int age = 8;
+  var olcham = 500;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: age >= 7
-            ? Container(
-                height: 100,
-                width: 100,
-                color: Colors.yellow,
-              )
-            : Container(
-                height: 100,
-                width: 100,
-                color: Colors.red,
-              ),
-      ),
+      body: olcham <= MediaQuery.of(context).size.width
+          ? Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    color: Colors.green,
+                  ),
+                ),
+                Expanded(
+                  child: Container(
+                    color: Colors.red,
+                  ),
+                ),
+              ],
+            )
+          : Container(
+              color: Colors.yellow,
+            ),
     );
   }
 }
